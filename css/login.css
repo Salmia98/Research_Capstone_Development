@@ -1,0 +1,91 @@
+@font-face {
+    font-family: 'Raleway';
+    src: url('../font/Raleway-Regular.ttf') format("truetype") ;
+}
+
+body {
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #fff;
+}
+
+/* main container */
+.container {
+    text-align: center;
+}
+
+/* logo image container */
+.logo img {
+    width: 200px;
+    padding: 10px;
+    background-size: cover;
+}
+
+/* login from content */
+.login-form {
+    background-color: #a7c7c4;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #040403;
+}
+
+/* NFCare text style */
+.login-form h2 {
+    margin-bottom: 30px;
+    color: #fff  ;
+    text-shadow: 0px 4px #4d4d4d;
+}
+
+/* input text content */
+.input-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    background-color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+/* override input container icon */
+.input-container .icon {
+    color: white;
+    min-width: 50px;
+    text-align: center;
+    border-radius: 5px 0 0 5px;
+}
+
+/* override input text */
+.input-container input {
+    border: none;
+    outline: none;
+    padding: 10px;
+    width: 100%;
+    border-radius: 0 5px 5px 0;
+    color: #727272;
+}
+
+/* button content */
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+button:hover {
+    background-color: lightblue;
+}
+
+/* label */
+label {
+    color: white;
+    margin-top: 10px;
+    display: block;
+    font: 14px / 1.55 'Open Sans', Helvetica, Arial, sans-serif;
+}

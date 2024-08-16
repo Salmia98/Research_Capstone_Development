@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="icon" type="image/x-logo" href="../img/logo.png">
+        <link rel="stylesheet" href="../css/manage-account.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <title>Manage Account - NFCare</title>
+    </head>
+
+<body>
+    <!-- navigation bar container -->
+    <div class="nav-bar">
+        <div class="logo">
+            <img src="../img/logo.png">
+            <h2>NFCare</h2>
+        </div>
+        <!-- navigation button container -->
+        <div class="nav-btn">analytics</div>
+        <div class="nav-btn" onclick="onClickManageAccount()">Manage Account</div>
+        <div class="nav-btn">Patients Account</div>
+        <div class="logout">
+            <i class="fa-solid fa-right-from-bracket" style="margin-right: 5px;"></i>
+            <span>Logout</span>
+        </div>
+    </div>
+    <!-- PERSONAL INFORMATION -->
+    <div class="whole-container" id="id_whole_container">
+        <div class="personal-info">
+            <div class="sign-up">
+                <p>First Name</p>
+                <input class="input-text" type="text" name="fname" id="name">
+            </div>
+            <div class="sign-up">
+                <p>Last Name</p>
+                <input class="input-text" type="text" lastname="surname" id="lastname">
+            </div>
+            <div class="sign-up">
+                <p>Middle Name</p>
+                <input class="input-text" type="text" middlename="midname" id="middlename">
+            </div>
+            <div class="search-btn">
+                <span>Search</span>
+            </div>
+            <div class="acc-type">
+                <div class="sign-up">
+                    <p>Account Type</p>
+                    <input class="input-text" type="text" name="fname">
+                </div>
+            </div>
+            <!-- Gender container -->
+            <div class="acc-type">
+                <p>Gender</p>
+                <div class="radio-btn">
+                    <input class="radio-btn" type="radio" name="gender" value="Male">
+                    <label>Male</label>
+                </div>
+                <div class="radio-btn">
+                    <input class="radio-btn" type="radio" name="gender" value="Female">
+                    <label>Female</label>
+                </div>
+            </div>
+            <!-- Date of Birth container -->
+            <div class="input-date">
+                <p>Date of Birth</p>
+                <input class="input-text" type="text" name="fname" style="margin-left: 10px;">
+                <i class="fa-solid fa-calendar-days" style="font-size:35px; margin-left: 10px; color: #5b6b90;"></i>
+            </div>
+            <!-- Citizenship container -->
+            <div class="citizenship">
+                <p>Citizenship</p>
+                <div class="radio-btn">
+                    <input class="radio-btn" type="radio" name="status" value="Filipino">
+                <label>Filipino</label>
+                </div>
+                <div class="radio-btn">
+                    <input class="radio-btn" type="radio" name="status" value="Others">
+                    <label>Others</label>
+                </div>
+                <input class="input-text" type="text" name="fname" style="margin-left: 20px;">
+            </div>
+        </div>
+        <!-- CIVIL STATUS CONTAINER -->
+        <div class="civil-status">
+            <div class="text-top">
+                <h3>Civil Status</h3>
+            </div>
+            <div class="main">
+                <div class="radio-btn">
+                        <input class="radio-btn" type="radio" name="status" value="single">
+                    <label>Single</label>
+                </div>
+                <div class="radio-btn">
+                        <input class="radio-btn" type="radio" name="status" value="Legally Separated">
+                    <label>Legally Separated</label>
+                </div>
+                <div class="radio-btn">
+                        <input class="radio-btn" type="radio" name="status" value="Annulled">
+                    <label>Annulled</label>
+                </div>
+            </div>
+            <div class="main">
+                <div class="radio-btn">
+                        <input class="radio-btn" type="radio" name="status" value="Married">
+                    <label>Married</label>
+                </div>
+                <div class="radio-btn">
+                        <input class="radio-btn" type="radio" name="status" value="Divorced">
+                    <label>Divorced</label>
+                </div>
+                <div class="radio-btn">
+                        <input class="radio-btn" type="radio" name="status" value="Widow/er">
+                    <label>Widow/er</label>
+                </div>
+            </div>
+            <!-- CONTACT INFO AND NFC SERIAL ID-->
+            <div class="info">
+                <div class="sign-up">
+                    <p>Contact Number</p>
+                    <input class="input-text" type="text" name="cont-number" id="contact-number">
+                </div>
+                <div class="sign-up">
+                    <p>Email</p>
+                    <input class="input-text" type="text" lastname="email" id="email">
+                </div>
+                <div class="sign-up">
+                    <p>NFC Serial ID</p>
+                    <input class="input-text" type="text" middlename="nfc-serial-ID" id="nfc-serial-ID">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <script src="../js/manage-account.js"></script> -->
+</body>
+</html>

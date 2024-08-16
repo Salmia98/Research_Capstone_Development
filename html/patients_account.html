@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="../css/patients_account.css">
+        <link rel="stylesheet" href="../css/manage-account.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+
+    <body>
+        <div class="top">
+            <div class="main-cont">
+                <!-- sign up for personal information -->
+                <div class="sign-up">First Name
+                    <input class="input-text" name="fname" id="name">
+                </div>
+                <div class="sign-up">Last Name
+                    <input class="input-text" name="lname" id="last-name">
+                </div>
+                <div class="sign-up">Middle Name
+                    <input class="input-text" name="mname" id="middle-name">
+                </div>
+                <div class="search-btn">Search</div>
+            </div>
+            <!-- account type -->
+            <div class="main-cont">
+                <select class="sign-up">
+                    <option selected>Select Account Type</option>
+                    <option value="1">Doctors</option>
+                    <option value="2">Nurses</option>
+                    <option value="3">Patient</option>
+                    <option value="4">Staff Encoder</option>
+                </select>
+                <!-- date admitted -->
+                <div class="input-date">Date Admitted
+                    <input class="input-text" id="id_date" onclick="onClickInputText()" type="date" onchange="onChangeDate()" style="margin-left: 10px;">
+                </div>
+                <!-- type of diseases -->
+                <div class="sign-up" id="id_diseases_cont">Diseases
+                    <input class="in-text" style="margin-top: 5px;">
+                    <input class="in-text" id="diseases">
+                </div>
+                    <!-- button add and remove -->
+                <div class="addRev-cont">
+                    <button class="add" onclick="add()">Add</button>
+                    <button class="remove" onclick="remove()"></i>Remove</button>
+                </div>
+            </div>
+            <!-- main bottom container -->
+        </div>
+        <div class="bottom">
+            <div class="sign-up">Medications
+                <input class="in-text" name="med" id="medication">
+                <input class="in-text" name="med" id="medication">
+            </div>
+            <!-- started date med intake -->
+            <div class="sign-up">Started Date Intake
+                <div class="input-date">
+                    <input class="input-text" type="date" onchange="onStartDate()" style="margin-top: 0;">
+                </div>
+                <div class="input-date">
+                    <input class="input-text" type="date" onchange="onEndDate()" style="margin-top: 0;">
+                </div>
+            </div>
+            <!-- # of days med intake -->
+            <div class="sign-up">Number of Intake per Day
+                <input class="in-text" name="med" id="intake-per-day">
+                <input class="in-text" name="med" id="intake-per-day">
+            </div>
+            <!-- interval -->
+            <div class="sign-up">Interval
+                <input class="in-text" name="med" id="interval">
+                <input class="in-text" name="med" id="interval">
+            </div>
+            <!-- hours -->
+            <div class="sign-up">Hours
+                <input class="in-text" name="med" id="number-of-hour">
+                <input class="in-text" name="med" id="number-of-hour">
+                <div class="addRev-cont">
+                    <button class="add"></i>Add</button>
+                    <button class="remove"></i>Remove</button>
+                </div>
+            </div>
+        </div>
+        <!-- bottom 2 container -->
+        <div class="bottom">
+            <div class="sign-up" id="id_assign_doctor">Assigned Doctors
+                <input class="in-text">
+                <input class="in-text" id="assign-doctor" style="margin-bottom: 3px;">
+            </div>
+            <!-- assign nurses -->
+            <div class="sign-up">Assigned Nurses
+                <input class="in-text" name="med" id="ass-nurses">
+                <input class="in-text" name="med" id="ass-nurses" style="margin-bottom: 3px;">
+                <div class="addRev-cont">
+                    <button class="add"></i>Add</button>
+                    <button class="remove"></i>Remove</button>
+                </div>
+            </div>
+        </div>
+
+        <script src="../script/patients_acc.js"></script>
+    </body>
+</html>

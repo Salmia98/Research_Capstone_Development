@@ -1,0 +1,202 @@
+@font-face {
+    font-family: 'Raleway';
+    src: url('../font/Raleway-Regular.ttf') format("truetype") ;
+}
+
+
+body{
+    display: flex;
+    background-color: white;
+}
+
+/* logo top container */
+.logo{
+    display: flex;
+    align-items: center;
+    font-family: 'Open Sans', Arial, sans-serif;
+}
+
+.logo p{
+    font-size: large;
+    font-weight: bold;
+}
+
+.logo img{
+    display: block;
+    width: 100px;
+    height: auto;
+    object-fit: fill;
+}
+
+/* left side bar container */
+.nav-bar{
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+    height: 90vh;
+    width: 15%;
+    align-items: left;
+    border-right: 1px solid  #a7afb2;
+}
+
+/* logout bottom container */
+.logout{
+    display: flex;
+    background-color: #5b6b90;
+    color: #fff;
+    margin-left: 70px;
+    width: fit-content;
+    padding: 10px;
+    margin-top: auto;
+    border-radius: 10px;
+    /* font-weight: bold; */
+    cursor: pointer;
+    font-size: 15px;
+    font-family: 'Raleway', 'sans-serif';
+}
+.logout:hover {
+    background-color: #13afeb;
+    transition: 0.5s ease;
+}
+
+
+/* three left button container */
+.nav-btn{
+    display: flex;
+    font-weight: bold;
+    justify-content: left;
+    color: black;
+    width: 100%-30px;
+    padding: 10px 30px;
+}
+
+/* hover for clicking the buttons */
+.nav-btn:hover{
+    background-color: #f1f1f1;
+    cursor: pointer;
+}
+
+/* whole container of personal information and civil status */
+.whole-container{
+    display: flex;
+    flex-direction: row;
+    margin-left: 50px;
+    width: 70%;
+}
+
+/* personal information container  */
+.personal-info{
+    width: 25%;
+    padding: 15px;
+}
+
+/* container for sign up */
+.sign-up{
+    display: flex;
+    flex-direction: column;
+    margin: 0px 20px 0px 0;
+    padding: 10px;
+    outline: none;
+    font-size: 13px;
+    font-family: 'Raleway', 'sans-serif';
+}
+
+/* input text container */
+.input-text{
+    padding: 7px;
+    outline: none;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+}
+
+.input-text:hover {
+    border: 1px solid #13afeb;
+    transition: 0.3s ease;
+}
+
+/* search button */
+.search-btn{
+    margin-left: auto;
+    padding: 10px;
+    width: 50px;
+    border-radius: 20px;
+    text-align: center;
+    cursor: pointer;
+    background-color: #5b6b90;
+    color: white;
+    font-size: 14px;
+    font-family: 'Raleway', 'sans-serif';
+}
+
+.search-btn:hover {
+    background-color: #13afeb;
+    transition: 0.5s ease;
+}
+
+/* Account type container */
+.acc-type{
+    width: 250px;
+    padding: 5px;
+    margin-top: 15px;
+    font-size: 13px;
+    font-family: 'Raleway', 'sans-serif';
+}
+
+/* date of birth main container */
+.input-date{
+    display: flex;
+    align-items: center;
+    padding: 7px;
+    font-size: 13px;
+    font-family: 'Raleway', 'sans-serif';
+}
+
+/* citizenship container */
+.citizenship{
+    margin-top: 20px;
+    font-size: 13px;
+    font-family: 'Raleway', 'sans-serif';
+}
+
+/* main container of civil status */
+.civil-status{
+    width: 50%;
+    margin-left: 150px;
+    font-size: 13px;
+    font-family: 'Raleway', 'sans-serif';
+}
+
+/* civil status text */
+.text-top{
+    margin-bottom: 20px;
+    font-size: large;
+    /* background-color: violet; */
+}
+
+/* civil status main container */
+.main{
+    display: flex;
+    width: fit-content;
+    margin-bottom: 15px;
+}
+
+/* container of radio button */
+.radio-btn{
+    display: flex;
+    width: 200px;
+    margin-right: 10px;
+    align-items: center;
+}
+
+/* input type for radio */
+input[type="radio"] {
+    width: 20px;
+    height: 30px;
+}
+
+/* bottom contact info */
+.info{
+    margin-top: 50px;
+    width: 40%;
+}
+
